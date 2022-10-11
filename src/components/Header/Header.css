@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding:25px 100px;
+}
+.logo a{
+    text-decoration: none;
+    color:black;
+}
+.logo h3{
+    margin:0px;
+}
+nav ul{
+    margin:0px;
+}
+nav ul a {
+    text-decoration: none;
+    margin-right:20px;
+    color:#000000;
+    font-size:16px;
+}

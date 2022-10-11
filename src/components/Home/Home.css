@@ -1,0 +1,18 @@
+.home{
+    margin:50px 0px;
+}
+.home-cnt{
+    background-color: rgb(117, 219, 163);
+    padding:20px 200px 20px 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+.home-cnt h2{
+    margin-bottom: 20px;
+}
+.home-cnt p{
+    margin-bottom: 0px;
+    font-size:17px;
+    font-weight: 400;
+
+}

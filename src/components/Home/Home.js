@@ -1,7 +1,12 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Quiz from '../Quiz/Quiz';
 import './Home.css';
 
 const Home = () => {
+	const quizesData = useLoaderData();
+	const quizes = quizesData.data;
+	console.log(quizes);
 	return (
 		<div className='home'>
 			<div className="container">
@@ -10,7 +15,17 @@ const Home = () => {
 						<div className="home-cnt">
 							<h2> Welcome to the quiz page.</h2>
 							<p>It helps in identifying the students with what they know and what they don't. It increases the level of practice, and concentration and increases the uplift of the memorizing level at its best.</p>
-						</div>
+						</div>						
+					</div>
+					<div className="quiz-container">
+							<div className="row">
+								{
+									quizes.map(quiz => <Quiz
+										key={quiz.id}
+										quiz={quiz}
+									></Quiz>)
+								}
+							</div>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,15 @@
+.cant-find{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.number{
+    font-size:200px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.cant-find h2{
+    margin-bottom: 20px;;
+}

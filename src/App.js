@@ -6,6 +6,7 @@ import Page404 from './components/404/Page404';
 import Nothing from './components/Nothing/Nothing';
 import QuizSingle from './components/QuizSingle/QuizSingle';
 import Blog from './components/Blog/Blog';
+import Statistics from './components/Statistics/Statistics';
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +30,9 @@ function App() {
         },{
           path:'/blog',
           element:<Blog></Blog>
+        },{
+          path:'/statistics',
+          element:<Statistics></Statistics>
         },
         {
           path:'*',

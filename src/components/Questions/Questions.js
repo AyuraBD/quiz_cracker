@@ -1,20 +1,34 @@
 import React from 'react';
 import './Questions.css';
-import { EyeIcon } from '@heroicons/react/24/solid'
+import { EyeIcon } from '@heroicons/react/24/solid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Questions = ({ questions }) => {
 
 	console.log(questions);
-	const { question, options } = questions;
+	const { question, options, correctAnswer } = questions;
+
+	const notify = () => toast(`${correctAnswer}`);
+
+	// const showCorrectAnswer = () =>{
+		
+	// 	if(options === correctAnswer){
+	// 		alert(`The answer is true.`)
+	// 	} else{
+	// 		alert('Answer is wrong');
+	// 	}
+	// }
 
 	return (
 			<div className="singleQuiz">
 				<div className="question-header">
 					<div className="question">
+					<ToastContainer />
 						<p>{question}</p>
 					</div>
 					<div className="icon">
-						<button><EyeIcon className="h-6 w-6 text-blue-500"/></button>
+						<button onClick={notify}><EyeIcon className="h-6 w-6 text-blue-500"/></button>
 					</div>
 				</div>
 				<div className="quiz-options">

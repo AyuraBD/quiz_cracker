@@ -6,7 +6,6 @@ import './QuizSingle.css';
 const QuizSingle = () => {
 	const quizDataSingle = useLoaderData();
 	const quizSingle = quizDataSingle.data;
-	console.log(quizSingle);
 	const { name, id, logo, questions, total } = quizSingle;
 	return (
 		<div>

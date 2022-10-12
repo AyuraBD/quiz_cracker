@@ -1,3 +1,10 @@
 .statistics{
-    padding:70px 0px;
+    padding:50px 0px;
+}
+.statistics-header{
+    background-color: rgb(117, 219, 163);
+    padding: 20px 200px 20px 20px;
+    border-radius: 20px;
+    text-align: left;
+    margin-bottom: 40px;
 }

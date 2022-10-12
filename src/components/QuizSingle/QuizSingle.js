@@ -7,7 +7,7 @@ const QuizSingle = () => {
 	const quizDataSingle = useLoaderData();
 	const quizSingle = quizDataSingle.data;
 	console.log(quizSingle);
-	const { name, id, logo, questions } = quizSingle;
+	const { name, id, logo, questions, total } = quizSingle;
 	return (
 		<div>
 			<div className='quzeSingle'>
@@ -17,6 +17,7 @@ const QuizSingle = () => {
 							<div className="quiz-left">
 								<div className="quiz-header">
 									<h3>Quiz of {name}</h3>
+									<h3>{total}</h3>
 								</div>
 								<div className="topic-img">
 									<img className='img-fluid' src={logo} alt="" />

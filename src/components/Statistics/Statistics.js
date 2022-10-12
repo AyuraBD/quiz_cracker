@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
+import './Statistics.css';
 
 const Statistics = () => {
 	return (
@@ -8,12 +10,13 @@ const Statistics = () => {
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="statistics-header">
-								<h3>All topics at a glance.</h3>
+								<h3>Quiz Statistics.</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 };
